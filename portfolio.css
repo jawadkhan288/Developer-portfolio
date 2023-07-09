@@ -1,7 +1,7 @@
 /* nav relatted Styles*/
 body{
     font-family: 'Open Sans', sans-serif;
-    height: 1200px;
+    /* height: 1600px; */
 }
 nav{
     display:flex;
@@ -85,13 +85,17 @@ line-height: normal;
     margin-top: 5px;
     margin-bottom: 0px;
 }
+main{
+    max-width:1140px;
+    margin: 0 auto;
+}
 .para1{
     font-size: 18px;
     padding: 0 20px 0 0;
     margin-bottom: 5px;
 }
 .about{
-    padding: 30px;
+    padding: 120px;
     background-color: #FFF8F3;
     border-radius: 10px;
     margin: 130px 0;
@@ -110,4 +114,21 @@ line-height: normal;
     font-size: 18px;
 
     font-weight: 400;
+}
+.about-info-continer{
+    display: flex;
+    justify-content: space-between;
+}
+.about-info{
+    text-align: center;
+}
+.info-title{
+    color:#757575;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.info-description{
+    font-size: 20px;
+    font-weight: 700;
 }
