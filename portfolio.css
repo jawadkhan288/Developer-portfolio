@@ -1,7 +1,7 @@
 /* nav relatted Styles*/
 body{
     font-family: 'Open Sans', sans-serif;
-    height: 2400px;
+    height: 3500px;
 }
 nav{
     display:flex;
@@ -171,4 +171,39 @@ color:  #474747;
 font-size: 30px;
 font-weight: 700;
 
+}
+.resume-container{
+    display: flex;
+    gap: 50px;
+}
+.resume-item-title{
+    color:#474747;
+font-size: 25px;
+font-weight: 700;
+margin-bottom: 10px;
+}
+.resume-item-institute{
+    color:#757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.resume-paragraph{
+color:#757575;
+margin-top: 20px;
+font-size: 16px;
+
+font-weight: 400;
+
+}
+.resume-container hr{
+    margin: 0 30px 0 0px;
+    width: 558px;
+    background: #D1D1D1;
+
+}
+.download-cv{
+   text-align: center;
+   margin-top: 69px;
 }
