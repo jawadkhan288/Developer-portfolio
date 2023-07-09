@@ -118,6 +118,7 @@ main{
 .about-info-continer{
     display: flex;
     justify-content: space-between;
+    
 }
 .about-info{
     text-align: center;
@@ -130,5 +131,25 @@ main{
 }
 .info-description{
     font-size: 20px;
+    font-weight: 600;
+    color: #474747;
+}
+#what-i-do{
+    padding: 30px;
+}
+.container{
+    display: flex;
+    
+}
+.skill-title{
+    color:  #181818;
+    font-size: 20px;
     font-weight: 700;
+   
+}
+.skill-description{
+    color:#757575;
+font-size: 16px;
+font-weight: 400;
+
 }
