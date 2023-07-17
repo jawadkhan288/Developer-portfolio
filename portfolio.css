@@ -39,9 +39,10 @@ font-weight: 400;
 line-height: normal;
 }
 .btn-primary{
+  
 
     font-size: 20px;
-
+    margin-right: 10px;
     font-weight: 700;
     background-color: #FD6E0A;
     border-radius: 5px ;
@@ -49,27 +50,41 @@ line-height: normal;
     color: #ffff;
     width: 200px;
     height: 64px;
-    padding: 15px 35px;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background-color: #8b3a00;
+    width: 195px;
+    height: 60px;
+    
 }
 
 /* header related style */
 .header{
     background-color:#FFF8F3;
-    background-image: url('./images/header_bg.png');
+    background-image: url('./images/header_bg.png'), url('./images/developer.png') ;
+    background-size: auto,125px 600px;
     background-repeat: no-repeat;
-    background-position: bottom right;
+   
+    background-position: bottom right,top left;
 }
 .banner{
+    
+    margin-top: 0px;
     padding: 30px 30px 0px 150px;
     color: #181818;
     display:flex;
     align-items: center;
 }
+.banner-paragraph{
+    margin-right: 300px;
+}
 .banner-content{
     
 }
 .main-img{
-    width:300px
+    width:600px
   
     /* margin: -300px 0 0 0; */
 }
@@ -142,7 +157,8 @@ main>section{
 }
 .skill-container{
     display: flex;
-    gap: 30px;
+    gap: 24px;
+    
     
 }
 .skill{
@@ -167,6 +183,7 @@ font-weight: 400;
 }
 /* resum colum */
 .resume-column-title{
+    text-align: center;
 color:  #474747;
 font-size: 30px;
 font-weight: 700;
@@ -208,25 +225,40 @@ margin-right: 50px;
    margin-top: 69px;
 }
 .footer-section{
+    justify-content: space-between;
     margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
+.footer-section-title{
+    color: #181818;
+text-align: center;
+
+font-size: 35px;
+
+font-weight: 700;
+
 }
 .footer-banner{
     display: flex;
     justify-content: space-between;
     /* margin-top: 131px ; */
     background: #FFF8F3;
-    padding: 100px 200px;
+    padding: 100px 210px;
+    gap: 50px;
 
 }
 .footer-paragraph{
+    text-align: center;
     color:  #474747;
     font-size: 16px;
     font-weight: 400;
-    margin-right:100px ;
+    margin-bottom: 30px;
+    /* margin-right:100px ; */
 
 }
 .social-link{
-    
+    margin-top: 20px;
     gap: 30px;
     display:flex;
    
@@ -249,3 +281,37 @@ margin-right: 50px;
     width: 461px;
     
 }
+.hide{
+    display: none;
+}
+
+
+/* responsive styles */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+   .skill-container, .resume-container{
+    
+    flex-direction: column;
+   } 
+   #what-i-do-description{
+    padding: 20px;
+   }
+   .footer-banner{
+    padding: 10px;
+    flex-direction: column;
+   }
+
+   /* Resume section */
+   
+
+}
+@media screen and (max-width: 576px) and (max-width: 960px) {
+    body{
+        margin: 20px;
+    }
+   .footer-banner{
+    padding: 10px;
+   }
+ 
+ }
