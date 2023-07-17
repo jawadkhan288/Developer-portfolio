@@ -290,16 +290,36 @@ font-weight: 700;
 
 /* mobile devices */
 @media screen and (max-width: 576px) {
-   .skill-container, .resume-container{
+    .header{
+        background-image: none;
+    }
+
+   .skill-container, 
+   nav, nav > ul,
+   .banner,
+   .resume-container, 
+   .footer-banner,
+   .about-info-continer{
     
     flex-direction: column;
    } 
+   .banner .main-img{
+    width: 100%;
+   }
    #what-i-do-description{
     padding: 20px;
    }
-   .footer-banner{
+   footer, .about{
+  
     padding: 10px;
-    flex-direction: column;
+   
+   }
+   .footer-column{
+    width: 100%;
+   }
+   .contact input[type="text"],input[type="email"], textarea{
+    width: 80%;
+    text-align: center;
    }
 
    /* Resume section */
@@ -308,7 +328,7 @@ font-weight: 700;
 }
 @media screen and (max-width: 576px) and (max-width: 960px) {
     body{
-        margin: 20px;
+        margin: 10px;
     }
    .footer-banner{
     padding: 10px;
