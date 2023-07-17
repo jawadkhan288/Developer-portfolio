@@ -293,6 +293,20 @@ font-weight: 700;
     .header{
         background-image: none;
     }
+    .banner-title{
+        font-size: 50px;
+    }
+    .banner-paragraph{
+        margin: 0px;
+    }
+
+    .btn-primary{
+        
+        margin-bottom: 10px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
 
    .skill-container, 
    nav, nav > ul,
@@ -303,10 +317,15 @@ font-weight: 700;
     
     flex-direction: column;
    } 
-   .banner .main-img{
+   
+   .second-banner{
+    /* padding: 10px; */
+    text-align: center;
+   }
+   .banner .main-img,.resume-container hr{
     width: 100%;
    }
-   #what-i-do-description{
+   #what-i-do-description , .banner{
     padding: 20px;
    }
    footer, .about{
@@ -317,16 +336,24 @@ font-weight: 700;
    .footer-column{
     width: 100%;
    }
+   .second-banner{
+    width: 100%;
+    
+   }
    .contact input[type="text"],input[type="email"], textarea{
     width: 80%;
     text-align: center;
    }
+   
 
    /* Resume section */
    
 
 }
 @media screen and (max-width: 576px) and (max-width: 960px) {
+    .banner{
+        background-size: 100%;
+    }
     body{
         margin: 10px;
     }
